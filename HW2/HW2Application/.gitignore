@@ -31,7 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
-echo "HW2/HW2Application/src/main/resources/config/auth_firebase_key.json" >> .gitignore
-git rm --cached HW2/HW2Application/src/main/resources/config/auth_firebase_key.json
-git add .gitignore
-git commit -m "Remove sensitive key from tracking"
+HW2/HW2Application/src/main/resources/config/auth_firebase_key.json
