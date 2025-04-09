@@ -19,7 +19,6 @@ public class DocumentAiService {
 
     private final Storage storage;
 
-    // Replace these with your actual project details
     private static final String PROJECT_ID = "rich-surge-455615-u1";
     private static final String LOCATION = "eu";
     private static final String PROCESSOR_ID = "11fbd8c612b78e9c";
