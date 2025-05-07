@@ -10,7 +10,7 @@ public class FirestoreConfig {
     @Bean
     public Firestore firestore() {
         FirestoreOptions options = FirestoreOptions.getDefaultInstance().toBuilder()
-                .setProjectId("rich-surge-455615-u1")  // Replace with your project ID
+                .setProjectId("rich-surge-455615-u1")  
                 .setDatabaseId("docdata")
                 .build();
         Firestore db = options.getService();
