@@ -1,0 +1,27 @@
+# src/main/appengine/app.yaml
+
+runtime: java17
+instance_class: F1
+
+
+automatic_scaling:
+  min_idle_instances: 0  
+  max_idle_instances: automatic 
+  min_pending_latency: automatic 
+  max_pending_latency: automatic 
+  max_concurrent_requests: 80
+  min_instances: 0
+  max_instances: 3
+  target_cpu_utilization: 0.65
+
+env_variables:
+  SPRING_PROFILES_ACTIVE: "prod"
+  GCP_PROJECT_ID: "rich-surge-455615-u1"
+  GCS_BUCKET_NAME: "zebega_buckdet"
+  ELASTICSEARCH_HOST: "d6f40ccd7fb8451090fba5602eafcdbf.europe-west1.gcp.cloud.es.io"
+  ELASTICSEARCH_PORT: "443"
+  ELASTICSEARCH_SCHEME: "https"
+
+handlers:
+  - url: /.*
+    script: auto
