@@ -14,7 +14,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/documents/**")
-                        .allowedOrigins("http://localhost:3000") 
+                        .allowedOrigins("https://react-app-150477955319.europe-west3.run.app")
                         .allowedMethods("GET", "POST")
                         .allowCredentials(true);
             }
